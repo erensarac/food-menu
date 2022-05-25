@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 5px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  max-width: 1000px;
+  color: #27233a;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  color: #27233a;
+  padding: 20px;
+  display: grid;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+#head-banner {
+  margin-top: 15px;
+  width: 100%;
+  height: 150px;
+  background: url(https://media.istockphoto.com/photos/two-people-eating-traditional-turkish-food-lahmacun-and-kiymali-pide-picture-id1292937799?k=20&m=1292937799&s=612x612&w=0&h=CgUQUSpMLSbKOg9_6QTPCu4sfD8FOn0V6Lq3ojxiM9A=);
+  background-position: center;
+  object-fit: cover;
+  background-size: fill;
+  border-radius: 15px;
+}
+
+#food-category-select {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 7px 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #00000010;
+}
+
+#food-category-select button img {
+  width: 2.5em;
+  object-fit: cover;
+  object-position: center;
+}
+
+#food-category-select button {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  height: 100%;
+  padding: 10px 20px;
+  width: 110px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+  border: 0;
+  background-color: #f7f7f7;
+  /* border: 1px solid #00000030; */
+  font-size: 1em;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#food-category-select i {
+  font-size: 2em;
+}
+
+#food-category-select button:hover {
+  color: #ffa655;
+  background-color: #eeeeee;
+}
+
+#food-category-select button.active {
+  color: #fff;
+  background-color: #ffa655;
+}
+
+#food-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 20px;
+}
+
+.food-card {
+  padding: 5px;
+  margin-top: 20px;
+  display: flex;
+  max-width: 480px;
+  min-height: 150px;
+  background-color: #fff;
+  text-overflow: ellipsis;
+  border: 1px solid #00000020;
+  border-radius: 20px;
+  gap: 10px;
+}
+
+.food-card:hover {
+  border: 1px solid #ffa655;
+}
+
+.food-card div {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.food-card img {
+  border-radius: 20px;
+  width: 40%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 1s;
+}
+
+.food-card h3 {
+  width: 100%;
+  display: flex;
+  padding-bottom: 10px;
+  border-bottom: 2px #27233a dashed;
+  justify-content: space-between;
+  font-size: 1.5em;
+}
+
+.food-card h3 span {
+  color: #ffa655;
+}
+
+.food-card p {
+  color: #27233a;
+  margin-top: 20px;
+  font-size: 0.85em;
+}
